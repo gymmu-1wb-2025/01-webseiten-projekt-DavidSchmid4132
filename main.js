@@ -1,11 +1,12 @@
-let counter = 0
+let counter = 0;
 
-function createNewElement () {
-    let newElement = document.createElement("p")
+function createNewElement() {
+  let newElement = document.createElement("p");
 
-counter = counter + 1
+  counter = counter + 1;
 
-    newElement.textContent = "Element " + counter
+  newElement.textContent = "Element " + counter;
 
-let mainELement = document.querySelector("main");
-mainELement.appendChild(newElement);
+  let mainELement = document.querySelector("main");
+  mainELement.appendChild(newElement);
+}
