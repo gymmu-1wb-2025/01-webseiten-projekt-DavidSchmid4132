@@ -1,0 +1,30 @@
+.grid-wrapper {
+  display: grid;
+  height: 82vh;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+}
+
+header {
+  background-color: #0000ff;
+  padding: 20px;
+  text-align: center;
+  color: #f5d900;
+}
+main {
+  padding: 20px;
+  background-color: #ffffff;
+}
+footer {
+  background-color: #0000ff;
+  padding: 10px;
+  text-align: center;
+}
+aside {
+  color: #0000ff;
+  padding: 200px;
+}
