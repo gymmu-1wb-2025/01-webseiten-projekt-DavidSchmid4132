@@ -9,22 +9,31 @@
     "footer footer";
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
-  background-color: #0000ff;
+  background-color: #001aff;
   padding: 20px;
   text-align: center;
-  color: #f5d900;
+  color: #f5d800;
 }
 main {
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #001aff;
+  color: #f5d800;
 }
 footer {
-  background-color: #0000ff;
+  background-color: #001aff;
   padding: 10px;
   text-align: center;
 }
 aside {
-  color: #0000ff;
-  padding: 200px;
+  background-color: #1e00ff;
+}
+
+aside > img {
+  max-width: 100%;
 }
