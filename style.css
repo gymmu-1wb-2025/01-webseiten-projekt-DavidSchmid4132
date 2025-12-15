@@ -4,7 +4,7 @@
   grid-template-columns: 20% 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    "header header"
+    "header nav"
     "aside main"
     "footer footer";
 }
