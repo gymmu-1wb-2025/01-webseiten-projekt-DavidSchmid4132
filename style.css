@@ -37,3 +37,7 @@ aside {
 aside > img {
   max-width: 100%;
 }
+
+.icon-1 {
+  color: #f5d800;
+}
