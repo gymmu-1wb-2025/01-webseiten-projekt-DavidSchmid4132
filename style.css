@@ -17,7 +17,7 @@ body {
 
 header {
   font-family: monospace;
-  background-color: #001aff;
+  background-color: #1e00ff72;
   padding: 20px;
   text-align: center;
   color: white;
@@ -25,27 +25,23 @@ header {
 main {
   padding: 20px;
   background-color: white;
-  color: #001aff;
+  color: #1e00ff93;
   overflow-y: scroll;
   padding-block: 1rem;
   text-align: left;
 }
 footer {
-  background-color: #001aff;
+  background-color: #1e00ff72;
   padding: 10px;
   text-align: center;
   padding-block: 1em;
   color: white;
 }
 aside {
-  background-color: #1e00ff;
+  background-color: #1e00ff72;
   color: white;
 }
 
 aside > img {
   max-width: 100%;
-}
-
-.icon-1 {
-  color: #f5d800;
 }
