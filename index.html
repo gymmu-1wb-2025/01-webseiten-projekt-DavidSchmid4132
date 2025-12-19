@@ -5,37 +5,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eigene Webseite</title>
-
+    <!-- Verbindet das CSS-Stylesheet "style.css" ein und lädt das JavaScript "main.js" und macht was ich dort hingeschrieben habe -->
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
   </head>
 
-  <body>
-    <header>
-      <h1>Webseite von ...</h1>
+  <!-- Definiert den Body mit einem Grid-Layout und weist dem Header-Bereich die Grid-Zone "header" zu -->
+  <body class="grid-wrapper">
+    <header style="grid-area: header;">
+      <h1>Die Karriere von Josh Allen</h1>
+      <!--Wenn man auf den Button klickt, kommt die Zahl 17 zum vorschein-->
+      <button onclick="increaseCount()">click</button>
     </header>
+    <!--dass es links einen Balken hat, der Flüssig zum Header und zum Footer ist-->
+    <aside style="grid-area: aside;">
+      <!--Bild von Josh Allen-->
+      <img
+        src="https://athlonsports.com/.image/t_share/MjExNzQ5ODU0ODU3MTQ0Mjk2/screenshot-2024-12-29-at-62101pm.png"
+      >
+      <!-- Erstellt eine Navigationsleiste mit einer Liste von Links, die die Klasse "nav-list" hat -->
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="./unterseiten/Auszeichnungen.html">
+              <svg viewBox="0 0 100 100" width="48px">
+                <!-- Code für das Band -->
+                <line
+                  x1="50"
+                  y1="5"
+                  x2="50"
+                  y2="45"
+                  stroke="black"
+                  stroke-width="7"
+                />
+                <!-- Code für die Medaille -->
+                <circle cx="50" cy="70" r="20"/>
+              </svg>
 
-    <main>
-      <section>
-        <h2>Dies ist ein erster Abschnitt</h2>
-        Abschnitte haben immer einen Titel und dann den Text.
-      </section>
+              <!--Auszeichnungen unter dem Code, damit das Icon vor dem Wort anhezeigt wird-->
+              <span> Auszeichnungen </span>
+            </a>
+          </li>
+          <li>
+            <a href="./unterseiten/Josh-Allen.html">
+              <svg viewBox="0 0 100 100" width="48px">
+                <!-- Code für das Rechteck -->
+                <rect
+                  x="30"
+                  y="20"
+                  width="40"
+                  height="40"
+                  rx="10"
+                  ry="40"
+                  fill="black"
+                />
+              </svg>
+              <span> Liebesleben </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
-      <section>
-        <h2>Das p-Tag</h2>
-        <p>Der Text sollte immer in ein p gepackt werden.</p>
-        <p>Mit dem p ist es auch möglich einen Zeilenumbruch zu haben.</p>
-      </section>
+    <main style="grid-area: main;">
+      <section><!--definiert Abschnitte im Hauptinhalt-->
+        <!--h2 damit man sieht neuer titel, aber nicht so gross wie der Haupttitel-->
+        <h2>Das Frühere Leben von Josh Allen</h2>
+        Josh Patrick Allen wurde am 21. Mai 1996 in Firebaugh, Kalifornien
+        geboren und verbrachte seine gesamte Kindheit auf der gßen Baumwollfarm
+        seiner Familie, die sich über rund 3.000 Acres erstreckte. Das Leben auf
+        der Farm prägte ihn stark: Schon als Kind half er bei der Feldarbeit,
+        beim Bewässern und auf den Maschinen. Diese Arbeit brachte ihm früh
+        Disziplin, Verantwortungsbewusstsein und eine starke Arbeitsmoral bei
+        <h2>Die Highschoolzeit von Allen</h2>
+        <!--P, da neuer Abschnitt-->
+        <p
+        >
+          Josh Allen besuchte die Firebaugh High School in Kalifornien. Schon in
+          seinen ersten Jahren an der Schule zeigte er Talent und Begeisterung
+          für Football. Als Quarterback entwickelte er Schritt für Schritt seine
+          Fähigkeiten, besonders seine Wurfkraft und sein Spielverständnis, und
+          wurde schnell zu einem wichtigen Spieler im Team.
+        </p>
 
-      <section>
-        <h2>Unterseiten verlinken</h2>
         <p>
-          Wir können auch weitere Webseiten verknüpfen, dafür müssen wir nur
-          einen Link angeben, wie zum Beispiel zu den
-          <a href="./unterseiten/hobbies.html">Hobbies</a>.
+          In seinen mittleren Highschool-Jahren übernahm er zunehmend
+          Führungsaufgaben auf dem Feld und zeigte bemerkenswerte Leistungen in
+          Spielen gegen regionale Gegner. In seiner Senior-Saison erreichte er
+          seinen Höhepunkt: Er warf über 3.000 Yards und erzielte 33 Touchdowns,
+          wodurch er zu einem der herausragenden Spieler der Mannschaft wurde.
+        </p>
+        <p>
+          Seine gesamte Zeit an der Firebaugh High School war geprägt von harter
+          Arbeit, Disziplin und Durchhaltevermögen, sowohl auf dem Spielfeld als
+          auch außerhalb.
+        </p>
+      </section>
+      <h2>Die Schwierigkeiten ein College zu finden</h2>
+      <section>
+        <p>
+          Nach seiner beeindruckenden Highschool-Karriere hatte Josh Allen
+          zunächst Schwierigkeiten, ein College zu finden, das ihm die
+          Möglichkeit bot, auf Division-I-Niveau zu spielen. Trotz seiner
+          starken Leistungen an der Firebaugh High School erhielt er nur wenige
+          Angebote von größeren Colleges. Um seine Chancen zu verbessern,
+          entschied er sich, zunächst an ein Junior College zu gehen: das
+          Reedley College in Kalifornien.
+        </p>
+      </section>
+      <h2>Das Reedley College</h2>
+      <section>
+        <p>
+          Am Reedley College spielte Allen zwei Jahre als Quarterback und konnte
+          seine Fähigkeiten weiterentwickeln. Besonders seine starke Wurfkraft,
+          seine Beweglichkeit auf dem Feld und seine Fähigkeit, unter Druck zu
+          spielen, fielen auf. Er verbesserte zudem sein
+          Spielverständnis,lernte, Teams zu führen, und zeigte, dass er auch
+          gegen stärkere Gegner bestehen konnte. Diese Zeit war entscheidend, um
+          ihn als ernstzunehmenden Quarterback zu etablieren.
+        </p>
+      </section>
+      <h2>Die University of Wyoming</h2>
+      <section>
+        <p>
+          Seine Leistungen am Junior College machten ihn schließlich für größere
+          Programme interessant, und er wechselte an die University of Wyoming,
+          ein Division-I-College. 2016 wurde er sofort zum Starting-Quarterback,
+          wo er in seiner ersten Saison über 1.900 Yards warf und 16 Touchdowns
+          erzielte. In seiner zweiten Saison steigerte er seine Statistik auf
+          über 3.200 Yards und 35 Touchdowns, womit er zu einem der
+          auffälligsten Quarterbacks der Mountain West Conference wurde.
+        </p>
+        <p>
+          Während seiner College-Zeit zeigte Allen nicht nur sportliche Stärke,
+          sondern auch Durchhaltevermögen: Die anfänglichen Schwierigkeiten, ein
+          College zu finden, motivierten ihn, hart zu arbeiten und seine
+          Fähigkeiten konsequent zu verbessern. Seine Entschlossenheit, seine
+          Größe, Athletik und starke Wurfpräzision machten ihn schließlich zu
+          einem Top-Talent für die NFL.
+        </p>
+      </section>
+      <h2>Der NFL Draft 2018</h2>
+      <section>
+        <p>
+          Beim NFL Draft 2018 wurde Allen schließlich von den Buffalo Bills
+          ausgewählt als 7. Pick in der ersten Runde. Dies war eine der höchsten
+          Positionen für einen Quarterback, der aus einem kleineren College kam,
+          und unterstrich das Vertrauen der Bills in sein Potenzial. Direkt nach
+          dem Draft begann Allen, sich intensiv auf die NFL vorzubereiten,
+          arbeitete an seiner Technik, an der Entscheidungsfindung auf dem Feld
+          und an seiner Kondition.
+        </p>
+      </section>
+      <h2>Das Rookie Jahr</h2>
+      <section>
+        In seinem ersten NFL-Jahr 2018 begann Josh Allen als Back-up bei den
+        Buffalo Bills. Kurz nach Saisonstart übernahm er jedoch die Rolle des
+        Starting-Quarterbacks. Insgesamt spielte er 12 Spiele und warf 2.074
+        Yards, erzielte 10 Touchdowns und 12 Interceptions, bei einem
+        Passer-Rating von 67,9. Zudem zeigte er seine Vielseitigkeit als
+        Dual-Threat-Quarterback, indem er 8 Touchdowns durch Läufe erzielte. Die
+        Saison endete für die Bills mit einer 6–10-Bilanz. Trotz der Höhen und
+        Tiefen bewies Allen schon im Rookie-Jahr seinen starken Willen, seine
+        Führungsqualitäten und sein Potenzial als Quarterback für die Zukunft.
+      </section>
+      <h2>Das historische MVP Jahr</h2>
+      <section>
+        In der Saison 2024 spielte Josh Allen auf einem außergewöhnlich hohen
+        Niveau und wurde dafür mit dem NFL MVP ausgezeichnet – seine erste
+        MVP-Trophäe. Er warf in dieser Saison 3.731 Yards, erzielte 28
+        Touchdowns bei nur 6 Interceptions und erreichte ein Passer-Rating von
+        101,4. Dazu zeigte er seine Vielseitigkeit: Er lief selbst für 531 Yards
+        und erzielte 12 Rushing Touchdowns.
+        <p>
+          Unter seiner Führung erreichten die Buffalo Bills eine
+          Regular-Season-Bilanz von 13–4 und gewannen erneut die AFC East. Allen
+          erhielt bei der MVP-Abstimmung die Mehrheit der Erstplatz-Stimmen und
+          setzte sich knapp gegen Lamar Jackson durch. In seiner Dankesrede bei
+          den NFL Honors betonte er vor allem die Unterstützung seines Teams,
+          der Organisation, seiner Eltern und seiner Verlobten Hailee Steinfeld.
+          Mit dem MVP-Sieg schrieb er Geschichte: Er ist der erste Quarterback
+          der Buffalo Bills, der den MVP-Titel gewonnen hat.
         </p>
       </section>
     </main>
 
-    <footer>Meine Webseite</footer>
+    <!--Befehl,damit es unter dem Text auch noch einen blauen Balken hat flüssig zum aside Balken-->
+    <footer style="grid-area: footer;"></footer>
   </body>
 </html>
