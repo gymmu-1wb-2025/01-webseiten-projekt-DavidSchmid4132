@@ -1,3 +1,4 @@
+/* Dieser Code erstellt ein Grid-Layout über die gesamte Seite mit Header oben, aside links, Hauptinhalt rechts und Footer unten */
 .grid-wrapper {
   display: grid;
   height: 100dvh;
@@ -8,13 +9,15 @@
     "aside main"
     "footer footer";
 }
-
+/* Dieser Code entfernt Standardabstände des Browsers und sorgt dafür,
+   dass Breite und Höhe von Elementen inklusive Rand berechnet werden */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Macht, dass die Schrift Monospace ist, macht einen blauen Hintergrund, fügt Innenabstand hinzu, zentriert den Text und färbt ihn weiß */
 header {
   font-family: monospace;
   background-color: #1e00ff72;
@@ -22,6 +25,7 @@ header {
   text-align: center;
   color: white;
 }
+/* Dieser Code macht, dass der Hauptinhalt weiß ist und einen blauen Hintergrund hat, aber auch dass man den Text herauf und herunter scrollen kann ohne aside, header, footer zu verschieben. Ausserdem, dass der Text links ist*/
 main {
   padding: 20px;
   background-color: white;
@@ -30,19 +34,23 @@ main {
   padding-block: 1rem;
   text-align: left;
 }
+/*Färbt den Footer blau ein und fügt Innenabstand hinzu*/
 footer {
   background-color: #1e00ff72;
   padding: 10px;
 }
+
+/*Macht, dass die Sidebar blau ist und der Text weiss ist*/
 aside {
   background-color: #1e00ff72;
   color: white;
 }
-
+/* Macht, dass das Bild in der Sidebar nicht breiter ist als sein Container */
 aside > img {
   max-width: 100%;
 }
 
+/* Dieser Code ordnet die Links horizontal an, richtet sie linksbündig aus (justify-content: flex-start), zentriert den Inhalt vertikal (align-items: center) und fügt Abstand zwischen Symbol und Text hinzu (gap: 10px) in der Navigation */
 .nav-list > li > a {
   display: flex;
   flex-direction: row;

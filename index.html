@@ -5,26 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eigene Webseite</title>
-
-<head>
+    <!-- Verbindet das CSS-Stylesheet "style.css" ein und lädt das JavaScript "main.js" und macht was ich dort hingeschrieben habe -->
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
-
   </head>
 
+  <!-- Definiert den Body mit einem Grid-Layout und weist dem Header-Bereich die Grid-Zone "header" zu -->
   <body class="grid-wrapper">
     <header style="grid-area: header;">
       <h1>Die Karriere von Josh Allen</h1>
+      <!--Wenn man auf den Button klickt, kommt die Zahl 17 zum vorschein-->
       <button onclick="increaseCount()">click</button>
     </header>
-
+    <!--dass es links einen Balken hat, der Flüssig zum Header und zum Footer ist-->
     <aside style="grid-area: aside;">
-      <!--dass es links einen Balken hat, der Flüssig zum Header und zum Footer ist-->
+      <!--Bild von Josh Allen-->
       <img
         src="https://athlonsports.com/.image/t_share/MjExNzQ5ODU0ODU3MTQ0Mjk2/screenshot-2024-12-29-at-62101pm.png"
       >
-      <!--Den link des Bildes in aside gemacht, damit das Bild seperat auf der linken Seite angezeigt wird, dass es den Text nicht störrt-->
-
+      <!-- Erstellt eine Navigationsleiste mit einer Liste von Links, die die Klasse "nav-list" hat -->
       <nav>
         <ul class="nav-list">
           <li>
@@ -69,8 +68,8 @@
     </aside>
 
     <main style="grid-area: main;">
-      <section>
-         <!--h2 damit man sieht neuer titel, aber nicht so gross wie der Haupttitel-->
+      <section><!--definiert Abschnitte im Hauptinhalt-->
+        <!--h2 damit man sieht neuer titel, aber nicht so gross wie der Haupttitel-->
         <h2>Das Frühere Leben von Josh Allen</h2>
         Josh Patrick Allen wurde am 21. Mai 1996 in Firebaugh, Kalifornien
         geboren und verbrachte seine gesamte Kindheit auf der gßen Baumwollfarm
@@ -79,17 +78,17 @@
         beim Bewässern und auf den Maschinen. Diese Arbeit brachte ihm früh
         Disziplin, Verantwortungsbewusstsein und eine starke Arbeitsmoral bei
         <h2>Die Highschoolzeit von Allen</h2>
-       <!--P, da neuer Abschnitt-->
-        <p>
-
+        <!--P, da neuer Abschnitt-->
+        <p
+        >
           Josh Allen besuchte die Firebaugh High School in Kalifornien. Schon in
           seinen ersten Jahren an der Schule zeigte er Talent und Begeisterung
           für Football. Als Quarterback entwickelte er Schritt für Schritt seine
           Fähigkeiten, besonders seine Wurfkraft und sein Spielverständnis, und
           wurde schnell zu einem wichtigen Spieler im Team.
         </p>
-        <p>
 
+        <p>
           In seinen mittleren Highschool-Jahren übernahm er zunehmend
           Führungsaufgaben auf dem Feld und zeigte bemerkenswerte Leistungen in
           Spielen gegen regionale Gegner. In seiner Senior-Saison erreichte er
@@ -97,7 +96,6 @@
           wodurch er zu einem der herausragenden Spieler der Mannschaft wurde.
         </p>
         <p>
-
           Seine gesamte Zeit an der Firebaugh High School war geprägt von harter
           Arbeit, Disziplin und Durchhaltevermögen, sowohl auf dem Spielfeld als
           auch außerhalb.
@@ -106,7 +104,6 @@
       <h2>Die Schwierigkeiten ein College zu finden</h2>
       <section>
         <p>
-
           Nach seiner beeindruckenden Highschool-Karriere hatte Josh Allen
           zunächst Schwierigkeiten, ein College zu finden, das ihm die
           Möglichkeit bot, auf Division-I-Niveau zu spielen. Trotz seiner
@@ -119,20 +116,18 @@
       <h2>Das Reedley College</h2>
       <section>
         <p>
-
           Am Reedley College spielte Allen zwei Jahre als Quarterback und konnte
           seine Fähigkeiten weiterentwickeln. Besonders seine starke Wurfkraft,
           seine Beweglichkeit auf dem Feld und seine Fähigkeit, unter Druck zu
-          spielen, fielen auf. Er verbesserte zudem sein Spielverständnis,
-          lernte, Teams zu führen, und zeigte, dass er auch gegen stärkere
-          Gegner bestehen konnte. Diese Zeit war entscheidend, um ihn als
-          ernstzunehmenden Quarterback zu etablieren.
+          spielen, fielen auf. Er verbesserte zudem sein
+          Spielverständnis,lernte, Teams zu führen, und zeigte, dass er auch
+          gegen stärkere Gegner bestehen konnte. Diese Zeit war entscheidend, um
+          ihn als ernstzunehmenden Quarterback zu etablieren.
         </p>
       </section>
       <h2>Die University of Wyoming</h2>
       <section>
         <p>
-
           Seine Leistungen am Junior College machten ihn schließlich für größere
           Programme interessant, und er wechselte an die University of Wyoming,
           ein Division-I-College. 2016 wurde er sofort zum Starting-Quarterback,
@@ -142,7 +137,6 @@
           auffälligsten Quarterbacks der Mountain West Conference wurde.
         </p>
         <p>
-
           Während seiner College-Zeit zeigte Allen nicht nur sportliche Stärke,
           sondern auch Durchhaltevermögen: Die anfänglichen Schwierigkeiten, ein
           College zu finden, motivierten ihn, hart zu arbeiten und seine
@@ -154,7 +148,6 @@
       <h2>Der NFL Draft 2018</h2>
       <section>
         <p>
-
           Beim NFL Draft 2018 wurde Allen schließlich von den Buffalo Bills
           ausgewählt als 7. Pick in der ersten Runde. Dies war eine der höchsten
           Positionen für einen Quarterback, der aus einem kleineren College kam,
@@ -197,7 +190,7 @@
       </section>
     </main>
 
-    <footer style="grid-area: footer;"></footer>
     <!--Befehl,damit es unter dem Text auch noch einen blauen Balken hat flüssig zum aside Balken-->
+    <footer style="grid-area: footer;"></footer>
   </body>
 </html>
