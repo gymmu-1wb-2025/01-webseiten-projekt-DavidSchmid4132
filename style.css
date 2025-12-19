@@ -42,3 +42,11 @@ aside {
 aside > img {
   max-width: 100%;
 }
+
+.nav-list > li > a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}

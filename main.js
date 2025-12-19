@@ -1,12 +1,15 @@
-let counter = 0;
+let showNumer = false;
+function increaseCount() {
+  let titleElement = document.querySelector("h1");
 
-function createNewElement() {
-  let newElement = document.createElement("p");
+  //
+  showNumer = !showNumer;
 
-  counter = counter + 1;
-
-  newElement.textContent = "Element " + counter;
-
-  let mainELement = document.querySelector("main");
-  mainELement.appendChild(newElement);
+  //
+  if (showNumer) {
+    let count = 17;
+    titleElement.textContent = count;
+  } else {
+    titleElement.textContent = "Die Karriere von Josh Allen";
+  }
 }
